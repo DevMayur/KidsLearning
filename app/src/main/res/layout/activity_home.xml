@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/listen_read_learn"
+            android:textSize="18sp"
+            android:padding="24dp"
+            android:fontFamily="@font/avenir_heavy"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_alphabets_marathi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/purple_400"
+            app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_margin="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/alphabets"
+                        android:textSize="18sp"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="24dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/avenir_medium"/>
+
+                        <Button
+                            android:id="@+id/button_alphabets_marathi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/avenir_medium"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/black"
+                            android:text="@string/slide_to_start"/>
+
+                    </LinearLayout>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:lottie_rawRes="@raw/study_online"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_numbers_marathi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/cardColor"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:paddingVertical="12dp"
+                    android:src="@drawable/sankhyagyan"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/numbers_marathi"
+                        android:textSize="18sp"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="24dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/avenir_medium"/>
+
+                    <Button
+                        android:id="@+id/button_numbers_marathi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenir_medium"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/black"
+                        android:text="@string/slide_to_start"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_alphabets_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/teal_200"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/a_b_c_d"
+                        android:textSize="18sp"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="24dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/avenir_medium"/>
+
+                    <Button
+                        android:id="@+id/button_alphabets_english"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenir_medium"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/black"
+                        android:text="@string/slide_to_start"/>
+
+                </LinearLayout>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    app:lottie_rawRes="@raw/abcd_board"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

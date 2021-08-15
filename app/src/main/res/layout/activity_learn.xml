@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LearnActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_linear_layout"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_linear_layout"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="100dp"
+        android:layout_above="@id/credits"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_previous"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="32sp"
+            android:layout_height="match_parent"
+            android:text="@string/previous"
+            android:drawableTint="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_voice_over"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_volume_up_24"
+            android:contentDescription="@string/voice_over" />
+
+
+        <Button
+            android:id="@+id/bt_next"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="32sp"
+            android:layout_height="match_parent"
+            android:text="@string/next"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/credits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="श्री . काकडे गुरुजी. शाळा - बजरंगवाडी."
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_700"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
